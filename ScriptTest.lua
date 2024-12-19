@@ -11,7 +11,7 @@ local Library = {
 		Legacy = {
 			Main = Color3.fromHSV(50, 50, 50),
 			Secondary = Color3.fromHSV(50, 50, 50),
-			Tertiary = Color3.fromHSV(130, 44, 65),
+			Tertiary = Color3.fromHSV(131, 44, 65),
 
 			StrongText = Color3.fromHSV(0, 0, 0),		
 			WeakText = Color3.fromHSV(0, 0, 0)
