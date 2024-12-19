@@ -10,7 +10,7 @@ local Library = {
 	Themes = {
 		Legacy = {
 			Main = Color3.fromHSV(0/360, 26/255, 50/255),
-			Secondary = Color3.fromHSV(0/360, 26/255, 50/255),
+			Secondary = Color3.fromHSV(0/360, 26/255, 51/255),
 			Tertiary = Color3.fromHSV(0/360, 153/255, 230/255),
 
 			StrongText = Color3.fromHSV(0, 0, 0),		
