@@ -28,6 +28,15 @@ local UniversalTab = GUI:Tab{
 }
 
 UniversalTab:Button{
+    Name = "Aimbot",
+    Description = "Mire Automaticamente no seu alvo",
+    Callback = function() 
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ttwizz/Open-Aimbot/master/source.lua", true))()
+        notifyScriptExecuted("Aimbot")
+    end
+}
+
+UniversalTab:Button{
     Name = "Infinity Yield",
     Description = "Script de Admin",
     Callback = function() 
