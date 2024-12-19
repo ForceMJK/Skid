@@ -2251,7 +2251,7 @@ function Library:color_picker(options)
 						Centered = true,
 						Theme = {BackgroundColor3 = "Secondary"},
 						BackgroundTransparency = 1,
-						Size = UDim2.fromOffset(50, 50),
+						Size = UDim2.fromOffset(250, 170),
 					}):round(6)
 
 					local _holderStroke = holder:object("UIStroke", {
