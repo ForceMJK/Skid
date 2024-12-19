@@ -9,9 +9,9 @@ local HTTPService = game:GetService("HttpService")
 local Library = {
 	Themes = {
 		Legacy = {
-			Main = Color3.fromHSV(109/360, 110/255, 108/255),
-			Secondary = Color3.fromHSV(109/360, 110/255, 108/255),
-			Tertiary = Color3.fromHSV(205/360, 84/255, 75/255),
+			Main = Color3.fromHSV(169/360, 169/255, 169/255),
+			Secondary = Color3.fromHSV(169/360, 169/255, 169/255),
+			Tertiary = Color3.fromHSV(255/360, 0/255, 0/255),
 
 			StrongText = Color3.fromHSV(0, 0, 0),		
 			WeakText = Color3.fromHSV(0, 0, 0)
