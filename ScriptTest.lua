@@ -9,8 +9,8 @@ local HTTPService = game:GetService("HttpService")
 local Library = {
 	Themes = {
 		Legacy = {
-			Main = Color3.fromHSV(20/360, 20/255, 25/255),
-			Secondary = Color3.fromHSV(30/360, 30/255, 35/255),
+			Main = Color3.fromHSV(50/360, 50/255, 55/255),
+			Secondary = Color3.fromHSV(50/360, 50/255, 55/255),
 			Tertiary = Color3.fromHSV(0/360, 153/255, 230/255),
 
 			StrongText = Color3.fromHSV(0, 0, 0),		
@@ -644,7 +644,7 @@ function Library:create(options)
 	local homeButton = tabButtons:object("TextButton", {
 		Name = "hehehe siuuuuuuuuu",
 		BackgroundTransparency = 0,
-		Theme = {BackgroundColor3 = "Secondary"},
+		Theme = {BackgroundColor3 = "Tertiary"},
 		Size = UDim2.new(0, 125, 0, 25)
 	}):round(5)
 
@@ -2781,7 +2781,7 @@ function Library:credit(options)
 				AnchorPoint = Vector2.new(1, 0),
 				Size = UDim2.new(0.5, 0, 0.5, 0),
 				Position = UDim2.new(1, 0, 0, -0),
-				ImageColor3 = Color3.fromRGB(255, 255, 255),
+				ImageColor3 = Color3.fromRGB(0/360, 153/255, 230/255),
 				Image = "http://www.roblox.com/asset/?id=8594150191",
 				ScaleType = Enum.ScaleType.Crop
 			})
@@ -2791,7 +2791,7 @@ function Library:credit(options)
 				AnchorPoint = Vector2.new(0, 0),
 				Size = UDim2.new(0.5, 0, 0.5, 0),
 				Position = UDim2.new(0, 0, 0, -0),
-				ImageColor3 = Color3.fromRGB(255, 255, 255),
+				ImageColor3 = Color3.fromRGB(0/360, 153/255, 230/255),
 				Image = "http://www.roblox.com/asset/?id=8594187532",
 				ScaleType = Enum.ScaleType.Crop
 			})
@@ -2801,7 +2801,7 @@ function Library:credit(options)
 				AnchorPoint = Vector2.new(0, 1),
 				Size = UDim2.new(0.5, 0, 0.5, 0),
 				Position = UDim2.new(0, 0, 1, 0),
-				ImageColor3 = Color3.fromRGB(255, 255, 255),
+				ImageColor3 = Color3.fromRGB(0/360, 153/255, 230/255),
 				Image = "http://www.roblox.com/asset/?id=8594194954",
 				ScaleType = Enum.ScaleType.Crop
 			})
@@ -2811,7 +2811,7 @@ function Library:credit(options)
 				AnchorPoint = Vector2.new(1, 1),
 				Size = UDim2.new(0.5, 0, 0.5, 0),
 				Position = UDim2.new(1, 0, 1, 0),
-				ImageColor3 = Color3.fromRGB(255, 255, 255),
+				ImageColor3 = Color3.fromRGB(0/360, 153/255, 230/255),
 				Image = "http://www.roblox.com/asset/?id=8594206483",
 				ScaleType = Enum.ScaleType.Crop
 			})
