@@ -1,0 +1,111 @@
+local Majiks = loadstring(game:HttpGet("https://raw.githubusercontent.com/ForceMJK/Skid/refs/heads/main/ScriptTest.lua"))()
+
+local GUI = Majiks:Create{
+    Name = "Majik'S Hub",
+    Size = UDim2.fromOffset(600, 400),
+    Theme = Majiks.Themes.Dark,
+}
+
+local function notifyScriptExecuted(scriptName)
+    GUI:Notification{
+        Title = "AVISO",
+        Text = scriptName .. " executado com sucesso!",
+        Duration = 3,
+        Callback = function() end
+    }
+end
+
+GUI:Notification{
+    Title = "AVISO",
+    Text = "Majik'S Hub foi iniciado com sucesso!",
+    Duration = 3,
+    Callback = function() end
+}
+
+local UniversalTab = GUI:Tab{
+    Name = "Universal Scripts",
+    Icon = "rbxassetid://8569322835"
+}
+
+UniversalTab:Button{
+    Name = "Infinity Yield",
+    Description = "Script de Admin",
+    Callback = function() 
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+        notifyScriptExecuted("Infinity Yield")
+    end
+}
+
+UniversalTab:Button{
+    Name = "Hitbox Expander",
+    Description = "Aumento de HitBox",
+    Callback = function() 
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/coqs/fried-chicken/refs/heads/main/NEWDELUXEFRIEDCHICKEN"))()
+        notifyScriptExecuted("Hitbox Expander")
+    end
+}
+
+UniversalTab:Button{
+    Name = "Reach Expander",
+    Description = "Aumento de Reach",
+    Callback = function() 
+        loadstring(game:HttpGet("https://gist.githubusercontent.com/ayayy/4d529b721e7d6934ff16356a6e71b4ba/raw"))()
+        notifyScriptExecuted("Reach Expander")
+    end
+}
+
+local TrollTab = GUI:Tab{
+    Name = "Troll Scripts",
+    Icon = "rbxassetid://8569322835"
+}
+
+TrollTab:Button{
+    Name = "Kawaii Aura",
+    Description = "Atrai objetos ao redor de voce",
+    Callback = function() 
+        pcall(function() 
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/hellohellohell012321/KAWAII-AURA/main/kawaii_aura.lua", true))() 
+        end)
+        notifyScriptExecuted("Kawaii Aura")
+    end
+}
+
+TrollTab:Button{
+    Name = "Kawaii Magnet",
+    Description = "Atrai objetos ao redor de um player",
+    Callback = function() 
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/MassiveHubs/loadstring/refs/heads/main/KAWAIIMAGNETSOURCE.lua'))()
+        notifyScriptExecuted("Kawaii Magnet")
+    end
+}
+
+TrollTab:Button{
+    Name = "Kawaii Fling",
+    Description = "Empurra players para longe",
+    Callback = function() 
+        pcall(function() 
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/hellohellohell012321/KAWAII-FREAKY-FLING/main/kawaii_freaky_fling.lua", true))() 
+        end)
+        notifyScriptExecuted("Kawaii Fling")
+    end
+}
+
+TrollTab:Button{
+    Name = "Fling Gui",
+    Description = "ATENÇÃO! Esse script só irá funcionar em executores de nível semelhante ao Delta",
+    Callback = function() 
+        _G.JXYSERR_MOBILE_TOGGLE_BUTTON = true
+        loadstring(game:HttpGet('https://pastebin.ai/raw/ku3dipdojr'))()
+        notifyScriptExecuted("Fling Gui")
+    end
+}
+
+TrollTab:Button{
+    Name = "Chat Bypass",
+    Description = "Hack para burlar a censura do roblox",
+    Callback = function() 
+        loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Synergy-Networks/products/main/BetterBypasser/loader.lua"))()
+        notifyScriptExecuted("Chat Bypass")
+    end
+}
+
