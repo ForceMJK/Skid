@@ -397,14 +397,14 @@ function Library:create(options)
 	}
 
 	if readfile and writefile and isfile then
-		if not isfile("MajiksSettings.json") then
-			writefile("MajiksSettings.json", HTTPService:JSONEncode(settings))
+		if not isfile("MercurySettings.json") then
+			writefile("MercurySettings.json", HTTPService:JSONEncode(settings))
 		end
-		settings = HTTPService:JSONDecode(readfile("MajiksSettings.json"))
+		settings = HTTPService:JSONDecode(readfile("MercurySettings.json"))
 		Library.CurrentTheme = Library.Themes[settings.Theme]
 		updateSettings = function(property, value)
 			settings[property] = value
-			writefile("MajiksSettings.json", HTTPService:JSONEncode(settings))
+			writefile("MercurySettings.json", HTTPService:JSONEncode(settings))
 		end
 	end
 
@@ -415,9 +415,9 @@ function Library:create(options)
 		Link = "MJK"
 	}, options)
 
-	if getgenv and getgenv().MajiksUI then
-		getgenv():MajiksUI()
-		getgenv().MajiksUI = nil
+	if getgenv and getgenv().MercuryUI then
+		getgenv():MercuryUI()
+		getgenv().MercuryUI = nil
 	end
 
 
@@ -566,7 +566,7 @@ function Library:create(options)
 	end
 
 	if getgenv then
-		getgenv().MajiksUI = closeUI
+		getgenv().MercuryUI = closeUI
 	end
 
 	closeButton.MouseButton1Click:connect(function()
