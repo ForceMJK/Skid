@@ -9,9 +9,9 @@ local HTTPService = game:GetService("HttpService")
 local Library = {
 	Themes = {
 		Legacy = {
-			Main = Color3.fromHSV(262/360, 60/255, 34/255),
-			Secondary = Color3.fromHSV(240/360, 40/255, 63/255),
-			Tertiary = Color3.fromHSV(260/360, 60/255, 148/255),
+			Main = Color3.fromHSV(0, 0, 0),
+			Secondary = Color3.fromHSV(255, 102, 102),
+			Tertiary = Color3.fromHSV(255, 102, 102),
 
 			StrongText = Color3.fromHSV(0, 0, 1),		
 			WeakText = Color3.fromHSV(0, 0, 172/255)
@@ -409,10 +409,10 @@ function Library:create(options)
 	end
 
 	options = self:set_defaults({
-		Name = "Mercury",
+		Name = "Majik'S Hub",
 		Size = UDim2.fromOffset(600, 400),
 		Theme = self.Themes[settings.Theme],
-		Link = "https://github.com/deeeity/mercury-lib"
+		Link = "MJK"
 	}, options)
 
 	if getgenv and getgenv().MercuryUI then
@@ -852,7 +852,7 @@ function Library:create(options)
 	}, Library)
 
 	local settingsTab = Library.tab(mt, {
-		Name = "Settings",
+		Name = "Configurações",
 		Internal = settingsTabIcon,
 		Icon = "rbxassetid://8559790237"
 	})
@@ -861,7 +861,7 @@ function Library:create(options)
 
 	settingsTab:keybind{
 		Name = "Toggle Key",
-		Description = "Key to show/hide the UI.",
+		Description = "Tecla para ativar/desativar o UI.",
 		Keybind = Enum.KeyCode.Delete,
 		Callback = function()
 			self.Toggled = not self.Toggled
@@ -871,7 +871,7 @@ function Library:create(options)
 
 	settingsTab:toggle{
 		Name = "Lock Dragging",
-		Description = "Makes sure you can't drag the UI outside of the window.",
+		Description = "Para o UI nao ir para fora da tela.",
 		StartingState = true,
 		Callback = function(state)
 			Library.LockDragging = state
@@ -880,7 +880,7 @@ function Library:create(options)
 
 	settingsTab:slider{
 		Name = "UI Drag Speed",
-		Description = "How smooth the dragging looks.",
+		Description = "Controle de velocidade do arrasto do UI.",
 		Max = 20,
 		Default = 14,
 		Callback = function(value)
@@ -893,20 +893,14 @@ function Library:create(options)
 		Internal = creditsTabIcon,
 		Icon = "http://www.roblox.com/asset/?id=8577523456"
 	})
-
-	rawset(mt, "creditsContainer", creditsTab.container)
-
-	creditsTab:credit{Name = "Abstract", Description = "UI Library Developer", Discord = "Abstract#8007", V3rmillion = "AbstractPoo"}
-	creditsTab:credit{Name = "Deity", Description = "UI Library Developer", Discord = "Deity#0228", V3rmillion = "0xDEITY"}
-	creditsTab:credit{Name = "Repository", Description = "UI Library Repository", Github="https://github.com/deeeity/mercury-lib/blob/master/src.lua"}
-
+	
 	return mt
 end
 
 function Library:notification(options)
 	options = self:set_defaults({
 		Title = "Notification",
-		Text = "Your character has been reset.",
+		Text = "Seu personagem foi resetado.",
 		Duration = 3,
 		Callback = function() end
 	}, options)
@@ -1387,7 +1381,7 @@ end
 function Library:dropdown(options)
 	options = self:set_defaults({
 		Name = "Dropdown",
-		StartingText = "Select...",
+		StartingText = "Selecione...",
 		Items = {},
 		Callback = function(item) return end
 	}, options)
