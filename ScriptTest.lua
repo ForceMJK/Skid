@@ -65,7 +65,7 @@ local Library = {
 		StrongText = {},
 		WeakText = {}
 	},
-	BemVindoText = nil,
+	WelcomeText = nil,
 	DisplayName = nil,
 	DragSpeed = 0.06,
 	LockDragging = false,
