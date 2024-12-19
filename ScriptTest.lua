@@ -9,9 +9,9 @@ local HTTPService = game:GetService("HttpService")
 local Library = {
 	Themes = {
 		Legacy = {
-			Main = Color3.fromHSV(0, 0, 0),
-			Secondary = Color3.fromHSV(0, 0, 0),
-			Tertiary = Color3.fromHSV(0, 0, 0),
+			Main = Color3.fromHSV(50, 50, 50),
+			Secondary = Color3.fromHSV(50, 50, 50),
+			Tertiary = Color3.fromHSV(192, 44, 65),
 
 			StrongText = Color3.fromHSV(0, 0, 0),		
 			WeakText = Color3.fromHSV(0, 0, 0)
@@ -2251,7 +2251,7 @@ function Library:color_picker(options)
 						Centered = true,
 						Theme = {BackgroundColor3 = "Secondary"},
 						BackgroundTransparency = 1,
-						Size = UDim2.fromOffset(255, 170),
+						Size = UDim2.fromOffset(50, 50),
 					}):round(6)
 
 					local _holderStroke = holder:object("UIStroke", {
