@@ -3,7 +3,7 @@ local Majiks = loadstring(game:HttpGet("https://raw.githubusercontent.com/ForceM
 local GUI = Majiks:Create{
     Name = "Majik'S Hub",
     Size = UDim2.fromOffset(600, 400),
-    Theme = Majiks.Themes.Dark,
+    Theme = Majiks.Themes.Legacy,
 }
 
 local function notifyScriptExecuted(scriptName)
