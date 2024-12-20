@@ -47,9 +47,9 @@ UniversalTab:Button{
 
 UniversalTab:Button{
     Name = "Hitbox Expander",
-    Description = "Aumento de HitBox",
+    Description = "Aumento de HitBox (A HitBox nao é visivel)",
     Callback = function() 
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/coqs/fried-chicken/refs/heads/main/NEWDELUXEFRIEDCHICKEN"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Vcsk/RobloxScripts/main/HitboxExpander.lua"))()
         notifyScriptExecuted("Hitbox Expander")
     end
 }
