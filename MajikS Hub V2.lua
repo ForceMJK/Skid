@@ -55,10 +55,19 @@ UniversalTab:Button{
 }
 
 UniversalTab:Button{
+    Name = "Teleport Reach",
+    Description = "Teleporta para dentro do alvo, funciona bem como TpAura",
+    Callback = function() 
+        loadstring(game:HttpGet("https://gist.githubusercontent.com/ayayy/4d529b721e7d6934ff16356a6e71b4ba/raw"))()
+        notifyScriptExecuted("Reach Expander")
+    end
+}
+
+UniversalTab:Button{
     Name = "Reach Expander",
     Description = "Aumento de Reach",
     Callback = function() 
-        loadstring(game:HttpGet("https://gist.githubusercontent.com/ayayy/4d529b721e7d6934ff16356a6e71b4ba/raw"))()
+        loadstring(game:HttpGet('https://pastebin.com/raw/0dnNLQgG'))()
         notifyScriptExecuted("Reach Expander")
     end
 }
