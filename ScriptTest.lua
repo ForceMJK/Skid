@@ -862,7 +862,7 @@ function Library:create(options)
 	settingsTab:keybind{
 		Name = "Toggle Key",
 		Description = "Tecla para ativar/desativar o UI.",
-		Keybind = Enum.KeyCode.RightShift,
+		Keybind = Enum.KeyCode.LeftShift,
 		Callback = function()
 			self.Toggled = not self.Toggled
 			Library:show(self.Toggled)
