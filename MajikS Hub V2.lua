@@ -218,5 +218,15 @@ FeTab:Button{
     end
 }
 
+FeTab:Button{
+    Name = "Walk On Walls",
+    Description = "Você acredita na gravidade?",
+    Callback = function() 
+        loadstring(game:HttpGet("https://pastebin.com/raw/zXk4Rq2r"))()
+        notifyScriptExecuted("Fe Animations")
+    end
+}
+
+
 
 
