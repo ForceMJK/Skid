@@ -201,12 +201,22 @@ FeTab:Button{
 }
 
 FeTab:Button{
-    Name = "Fe Emote",
-    Description = "Faz você ganhar uma lista de emotes, aperte " , " para o GUI",
+    Name = "Fe Emote & Animations (R15)",
+    Description = "Um pack de emotes e animações",
     Callback = function() 
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/ForceMJK/Skid/refs/heads/main/Emote.lua"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/BeemTZy/Motiona/refs/heads/main/source.lua"))()
         notifyScriptExecuted("Fe Emote")
     end
 }
+
+FeTab:Button{
+    Name = "Fe Animations (R6)",
+    Description = "Um pack de animações",
+    Callback = function() 
+        loadstring(game:HttpGet(('https://pastebin.com/raw/1p6xnBNf'),true))()
+        notifyScriptExecuted("Fe Animations")
+    end
+}
+
 
 
