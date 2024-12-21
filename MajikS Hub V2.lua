@@ -202,7 +202,7 @@ FeTab:Button{
 
 FeTab:Button{
     Name = "Fe Emote",
-    Description = "Faz você ganhar uma lista de emotes (aperte " , " para abrir o GUI)",
+    Description = "Faz você ganhar uma lista de emotes, aperte " , " para o GUI",
     Callback = function() 
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ForceMJK/Skid/refs/heads/main/Emote.lua"))()
         notifyScriptExecuted("Fe Emote")
