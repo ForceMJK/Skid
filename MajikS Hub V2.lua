@@ -223,7 +223,7 @@ FeTab:Button{
     Description = "Você acredita na gravidade?",
     Callback = function() 
         loadstring(game:HttpGet("https://pastebin.com/raw/zXk4Rq2r"))()
-        notifyScriptExecuted("Fe Animations")
+        notifyScriptExecuted("Walk On Walls")
     end
 }
 
