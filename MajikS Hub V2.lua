@@ -158,3 +158,46 @@ GamesTab:Button{
         notifyScriptExecuted("Prison Life")
     end
 }
+
+local FeTab = GUI:Tab{
+    Name = "Fe Scripts",
+    Icon = "rbxassetid://8569322835"
+}
+
+FeTab:Button{
+    Name = "Jerk Off (R6)",
+    Description = "Melhor você não saber o que isso faz...",
+    Callback = function() 
+        loadstring(game:HttpGet("https://pastefy.app/wa3v2Vgm/raw"))()
+        notifyScriptExecuted("Jerk Off")
+    end
+}
+
+FeTab:Button{
+    Name = "Jerk Off (R15)",
+    Description = "Melhor você não saber o que isso faz...",
+    Callback = function() 
+        loadstring(game:HttpGet("https://pastefy.app/YZoglOyJ/raw"))()
+        notifyScriptExecuted("Jerk Off")
+    end
+}
+
+FeTab:Button{
+    Name = "Npc Control",
+    Description = "Permite controlar NPCs",
+    Callback = function() 
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/randomstring0/Qwerty/refs/heads/main/qwerty13.lua"))()
+        notifyScriptExecuted("Npc Control")
+    end
+}
+
+FeTab:Button{
+    Name = "Invisible",
+    Description = "Te deixar invisivel",
+    Callback = function() 
+        loadstring(game:HttpGet('https://pastebin.com/raw/3Rnd9rHf'))()
+        notifyScriptExecuted("Invisible")
+    end
+}
+
+
