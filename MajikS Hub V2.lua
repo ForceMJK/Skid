@@ -37,6 +37,15 @@ UniversalTab:Button{
 }
 
 UniversalTab:Button{
+    Name = "Aimbot V2",
+    Description = "Uma versão alternativa de aimbot",
+    Callback = function() 
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/AirHub/main/AirHub.lua"))()
+        notifyScriptExecuted("Aimbot")
+    end
+}
+
+UniversalTab:Button{
     Name = "Infinity Yield",
     Description = "Script de Admin",
     Callback = function() 
