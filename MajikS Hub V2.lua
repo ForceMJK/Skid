@@ -193,7 +193,16 @@ FeTab:Button{
 
 FeTab:Button{
     Name = "Invisible",
-    Description = "Te deixar invisivel",
+    Description = "Te deixa invisivel (Serio que tive que explicar isso?)",
+    Callback = function() 
+        loadstring(game:HttpGet('https://pastebin.com/raw/3Rnd9rHf'))()
+        notifyScriptExecuted("Invisible")
+    end
+}
+
+FeTab:Button{
+    Name = "Fe Emote",
+    Description = "Faz você ganhar uma lista de emotes (aperte " , " para abrir o GUI)",
     Callback = function() 
         loadstring(game:HttpGet('https://pastebin.com/raw/3Rnd9rHf'))()
         notifyScriptExecuted("Invisible")
