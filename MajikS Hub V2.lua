@@ -227,6 +227,23 @@ FeTab:Button{
     end
 }
 
+FeTab:Button{
+    Name = "Fe Kiss",
+    Description = "Clique em alguem com o mouse :3",
+    Callback = function() 
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/BingusWR/FreakyAnimationScript/refs/heads/main/FreakyRobloxAnimation"))()
+        notifyScriptExecuted("Fe Kiss")
+    end
+}
+
+FeTab:Button{
+    Name = "Fe Hug",
+    Description = "Abraço gratis",
+    Callback = function() 
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Hug-Gui-R6-17818"))()
+        notifyScriptExecuted("Fe Hug")
+    end
+}
 
 
 
