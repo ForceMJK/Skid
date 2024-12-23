@@ -245,5 +245,24 @@ FeTab:Button{
     end
 }
 
+FeTab:Button{
+    Name = "Tool Rotate",
+    Description = "Rotacione sua arma, precisa equipar e desequipar para todos verem",
+    Callback = function() 
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/yofriendfromschool1/Sky-Hub-Backup/main/FE/fe%20toolrotate.txt"))()
+        notifyScriptExecuted("Tool Rotate")
+    end
+}
+
+FeTab:Button{
+    Name = "Tool Rotate",
+    Description = "Rotacione sua arma, precisa equipar e desequipar para todos verem",
+    Callback = function() 
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/yofriendfromschool1/Sky-Hub-Backup/main/FE/fe%20toolrotate.txt"))()
+        notifyScriptExecuted("Tool Rotate")
+    end
+}
+
+
 
 
