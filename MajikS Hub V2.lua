@@ -672,3 +672,19 @@ FeTab:Button{
         notifyScriptExecuted("Fe BackFlip")
     end
 }
+
+local MjkTab = GUI:Tab{
+    Name = "MJK Scripts",
+    Icon = "rbxassetid://8569322835"
+}
+
+MjkTab:Button{
+    Name = "Pizza Place Troll",
+    Description = "Script feito pelo lendario Lek_",
+    Callback = function() 
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ForceMJK/Skid/refs/heads/main/BackFlip.lua"))()
+        notifyScriptExecuted("Pizza Place Troll")
+    end
+}
+
+
