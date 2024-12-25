@@ -682,7 +682,7 @@ MjkTab:Button{
     Name = "Pizza Place Troll",
     Description = "Script feito pelo lendario Lek_",
     Callback = function() 
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/ForceMJK/Skid/refs/heads/main/BackFlip.lua"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ForceMJK/Skid/refs/heads/main/Lek.lua"))()
         notifyScriptExecuted("Pizza Place Troll")
     end
 }
