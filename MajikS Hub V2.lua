@@ -464,7 +464,7 @@ GamesTab:Button{
     Name = "Flee The Facility",
     Description = "LER O TITULO DO SCRIPT",
     Callback = function() 
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/antisocialb2/SPIMINE-FLEETHEFACILITY/main/script.lua'))()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/K9ntra/Antora/main/abc.lua'))()
         notifyScriptExecuted("Flee The Facility")
     end
 }
