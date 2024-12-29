@@ -348,8 +348,17 @@ GamesTab:Button{
 }
 
 GamesTab:Button{
+    Name = "Rainbow Friends ",
+    Description = "Jogo de boiola",
+    Callback = function() 
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Ginxys/RainbowFriends2/main/Loader.Lua", true))()
+        notifyScriptExecuted("Rainbow Friends")
+    end
+}
+
+GamesTab:Button{
     Name = "Five Night TD",
-    Description = "Script Para Fnaf TD",
+    Description = "Script Para Essa Porra ai",
     Callback = function() 
         loadstring(game:HttpGet('https://raw.githubusercontent.com/Prosexy/Demonic-HUB-V2/main/DemonicHub_V2.lua', true))()
         notifyScriptExecuted("Five Night TD")
